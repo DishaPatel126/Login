@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+}
+
+.bgimage {
+    /* background-image: url(images/cute_doodle.jpg);  */
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.container .wrapper {
+    margin: 30px auto;
+    padding: 35px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+}
+
+.container .wrapper .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 17px;
+    color: hsl(221, 88%, 10%);
+    text-shadow: 1px 1px 3px hsla(221, 88%, 45%, 0.5);
+}
+
+.wrapper .login{
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(221, 88%, 10%);
+    text-shadow: 1px 2px 3px hsla(221, 88%, 45%, 0.5);
+    padding: 10px 20px;
+}
+.login a{
+    text-decoration: none;
+    color: hsl(38, 99%, 51%);
+    text-shadow: 1px 2px 3px hsla(38, 99%, 51%, 0.5);
+    padding: 10px 7px;
+}
+
+a:hover{
+    color: hsl(38, 100%, 59%);
+    text-decoration: underline;
+}
+
+.wrapper small{
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(0, 60%, 34%);
+    text-shadow: 1px 1px 1px hsla(0, 60%, 34%, 0.5);
+    padding-bottom: 5px;
+}
+
+.content input,
+textarea,
+select {
+    font-weight: 600;
+    font-size: 17px;
+    margin: 8px 0px;
+    padding: 5px;
+    width: 100%;
+    color: hsl(221, 88%, 10%);
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 61%);
+}
+
+::placeholder {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.left {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 40px;
+}
+
+.left select {
+    font-weight: 400;
+}
+
+.left .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .row #password1{
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+}
+
+.row i{
+    padding: 10px 5px 8.5px 5px;
+    background-color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid hsl(0, 0%, 61%);
+    border-left: none;
+}
+
+.fa-eye-slash, .fa-eye{
+    width: 33px;
+    height: auto;
+}
+
+.right {
+    padding-right: 25px;
+    padding-left: 40px;
+    width: 100%;
+}
+
+.right .row #password{
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 61%);
+}
+
+.left .gender {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+.gender .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.left .gender input {
+    font-size: 10px;
+    width: 15px;
+}
+
+.gender .female,
+.male,
+.nonbinary,
+.none {
+    padding-right: 15px;
+}
+
+.right .dob{
+    margin-top: 0px;
+}
+
+.right #dob {
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.buttons {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+}
+
+.buttons button {
+    padding: 15px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: hsl(221, 88%, 10%);
+    color: #eee;
+    border-radius: 5px;
+    border: #ccc;
+}
+
+@media only screen and (max-width: 925px) {
+    .wrapper .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 75%;
+    }
+
+    .bgimage {
+        background-size: 75%;
+    }
+
+    .right {
+        padding-left: 25px;
+        padding-right: 40px;
+    }
+
+    .wrapper .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .wrapper button {
+        padding: 13px 40px;
+        margin: 5px 10px;
+    }
+
+}

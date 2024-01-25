@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+<body>
+    <div class="container">
+        <div>First name: <span id="first_name"></span></div>
+        <div>Last name: <span id="last_name"></span></div>
+        <div>Password: <span id="password1"></span></div>
+        <div>Gender: <span id="gender"></span></div>
+        <div>Email: <span id="email"></span></div>
+        <div>Contact: <span id="contact"></span></div>
+        <div>Date of birth: <span id="dob"></span></div>
+        <div>Course: <span id="course"></span></div>
+        <div>Address: <span id="address"></span></div>
+    </div>
+
+    <script>
+        const myObj = JSON.parse(localStorage.getItem('myObject'));
+
+        document.getElementById('first_name').textContent = myObj[0];
+        document.getElementById('last_name').textContent = myObj[1];
+        document.getElementById('password1').textContent = myObj[2];
+        document.getElementById('gender').textContent = myObj[3];
+        document.getElementById('email').textContent = myObj[4];
+        document.getElementById('contact').textContent = myObj[5];
+        document.getElementById('dob').textContent = myObj[6];
+        document.getElementById('course').textContent = myObj[7];
+        document.getElementById('address').textContent = myObj[8];
+
+        localStorage.clear();
+    </script>
+</body>
+</html>
